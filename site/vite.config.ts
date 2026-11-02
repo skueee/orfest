@@ -2,6 +2,7 @@ import tailwindcss from '@tailwindcss/vite';
 import adapter from '@sveltejs/adapter-static';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
+import { sveltePhosphorOptimize } from 'phosphor-svelte/vite';
 
 export default defineConfig({
 	plugins: [
@@ -19,6 +20,7 @@ export default defineConfig({
 				pages: '../dist/sveltekit',
 				assets: '../dist/sveltekit'
 			})
-		})
+    }),
+		sveltePhosphorOptimize()
 	]
 });

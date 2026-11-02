@@ -13,6 +13,7 @@
     "@deno/svelte-adapter": "npm:@deno/svelte-adapter@^0.2.2",
     "@std/assert": "jsr:@std/assert@^1.0.19",
     "@std/http": "jsr:@std/http@^1.0.19",
-    "@steno/steno": "jsr:@steno/steno@^0.14.0"
+    "@steno/steno": "jsr:@steno/steno@^0.14.0",
+    "phosphor-svelte": "npm:phosphor-svelte@^3.1.1"
   }
 }
