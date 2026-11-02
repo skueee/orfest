@@ -1,0 +1,15 @@
+title: "Orfest Docs"
+description: "Docs and guides for Orfest"
+author: "skueee"
+plugins:
+  - package: "jsr:@steno/plugin-tailwind"
+    mode: trusted
+  - package: "jsr:@steno/plugin-search"
+    mode: trusted
+contentDir: "docs/content"
+output: "dist/steno"
+devPort: 5735
+shortUrls: true
+theme: "jsr:@steno/theme-minimal@^0.14.0"
+themeConfig:
+  author: "skueee"

@@ -1,0 +1,18 @@
+{
+  "workspace": ["./site"],
+  "nodeModulesDir": "auto",
+  "tasks": {
+    "build:docs": "deno run --allow-read --allow-run --allow-write --allow-net=jsr.io --allow-env @steno/steno build --config docs/content/.steno/config.yml",
+    "dev:docs": "deno run --allow-read --allow-run --allow-write --allow-net=127.0.0.1,0.0.0.0,jsr.io --allow-env @steno/steno dev --config docs/content/.steno/config.yml",
+    "dev:site": "deno task --filter site dev --open",
+    "build:site": "deno task --filter site build",
+    "run": "deno run --allow-read --allow-net main.ts",
+    "build": "deno task build:docs && deno task build:site"
+  },
+  "imports": {
+    "@deno/svelte-adapter": "npm:@deno/svelte-adapter@^0.2.2",
+    "@std/assert": "jsr:@std/assert@^1.0.19",
+    "@std/http": "jsr:@std/http@^1.0.19",
+    "@steno/steno": "jsr:@steno/steno@^0.14.0"
+  }
+}
