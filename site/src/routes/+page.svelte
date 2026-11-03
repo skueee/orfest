@@ -1,11 +1,18 @@
 <script>
 	import Line from '#lib/components/Line.svelte';
 	import { ArrowDownIcon } from 'phosphor-svelte'
+	import Logo from '#lib/assets/images/logo.png'
 </script>
 
 <div class="h-screen w-full overflow-y-scroll snap-y snap-mandatory">
     <div class="h-screen w-full snap-start flex items-center justify-center">
-        Screen 1
+        <div class="flex flex-col items-center gap-5">
+            <div class="flex flex-col items-center gap-3">
+                <img src={Logo} alt="Orfest logo" width="600" class="-mb-10"/>
+                <p class="nunito-body text-xl">Build something Hack Club related - Get Hack Club merch</p>
+            </div>
+            <a class="text-4xl nunito-title-alt btn-primary cursor-pointer" href="https://rsvp.soon.it/orfest" target="_blank" rel="noopener noreferrer">RSVP NOW!!!</a>
+        </div>
     </div>
 
     <div class="snap-start min-h-screen w-full flex items-center justify-start flex-col pt-15">

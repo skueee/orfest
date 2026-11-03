@@ -52,3 +52,19 @@
         "wdth" 75,
         "YTLC" 440;
 }
+
+@layer components {
+    .btn-primary {
+        border-radius: calc(infinity * 1px);
+        border-width: 5px;
+        padding-block: calc(var(--spacing) * 2);
+        padding-inline: calc(var(--spacing) * 7);
+        box-shadow: 0px 6px 0px 0px #000000;
+        transition: transform 0.1s ease, box-shadow 0.1s ease, border-width 0.05s ease;
+    }
+    .btn-primary:hover {
+      transform: translate(0px, 6px);
+      box-shadow: 0px 0px 0px 0px #000000;
+      border-width: 3px;
+    }
+}
