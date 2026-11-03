@@ -3,7 +3,6 @@ import { serveDir } from "@std/http/file-server";
 const DOCS_ROOT = "./dist/steno";
 const SITE_ROOT = "./dist/sveltekit";
 
-
 function rewriteDocsHtml(html: string): string {
   return html.replace(
     /(\b(?:href|src|action|poster)=["'])\/(?!\/|docs\/)/g,
@@ -24,7 +23,10 @@ export async function handler(req: Request): Promise<Response> {
     });
 
     // Rewrite things so that it can access css
-    if (res.status === 200 && res.headers.get("content-type")?.includes("text/html")) {
+    if (
+      res.status === 200 &&
+      res.headers.get("content-type")?.includes("text/html")
+    ) {
       const headers = new Headers(res.headers);
       headers.delete("content-length");
       headers.delete("etag");
