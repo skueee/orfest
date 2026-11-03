@@ -1,5 +1,6 @@
 <script>
 	import Line from '#lib/components/Line.svelte';
+	import FaqQuestion from '#lib/components/FaqQuestion.svelte';
 	import { ArrowDownIcon } from 'phosphor-svelte'
 	import Logo from '#lib/assets/images/logo.png'
 	import smartDinosaurDocs from '#lib/assets/images/smartDinosaurDocs.png'
@@ -80,8 +81,15 @@
         </div>
         <div class="flex flex-col gap-10">
             <Line />
-            <div class="flex flex-col justify-start">
+            <div class="flex flex-col justify-start gap-7">
                 <h1 class="nunito-title text-6xl">FAQ</h1>
+                <div class="flex flex-col w-full gap-3">
+                    <FaqQuestion question="Is this legit?" answer='<p>Of course it is! It&apos;s ran by <a class="underline" href="https://hackclub.com/" target="_blank" rel="noopener noreferrer">Hack Club</a>, a nonprofit that is helping teens acquire technical competencies.</p>'/>
+                    <FaqQuestion question="Who can join?" answer="<p>Everyone that is between 13 and 18 years old</p>"/>
+                    <FaqQuestion question="Can I use AI?" answer="<p>You can use AI as a tool, but AI coding time should not exceed 30% of your total coding time.<br/> Sloppy submissions will not be approved.</p>"/>
+                    <FaqQuestion question="How was this website made?" answer='<p>I started by using <a"class="underline" href="https://figma.com/" target="_blank" rel="noopener noreferrer">Figma</a> for prototyping, then I used <a class="underline" href="https://deno.com/" target="_blank" rel="noopener noreferrer">Deno</a>, <a class="underline" href="https://svelte.dev/" target="_blank" rel="noopener noreferrer">Sveltekit</a> and <a class="underline" href="https://steno.gxbs.dev/" target="_blank" rel="noopener noreferrer">Steno</a> for the website.'/>
+                    <FaqQuestion question="I have more questions!" answer='<p>Ask them in <a class="underline" href="https://hackclub.enterprise.slack.com/archives/C0CECQF2AT0" target="_blank" rel="noopener noreferrer">#orfest</a>! I read everything :)</p>'/>
+                </div>
             </div>
             <Line />
         </div>
