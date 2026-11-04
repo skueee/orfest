@@ -104,5 +104,11 @@
         <div class="flex flex-row items-center justify-center ">
             <button onclick={gotoTop} class="hover:underline gap-2 items-center justify-center flex flex-row cursor-pointer nunito-title-alt text-3xl"><ArrowUpIcon weight={"bold"} size={32}/>Back to top<ArrowUpIcon weight={"bold"} size={32}/></button>
         </div>
+        <footer class="bg-black text-white w-full flex flex-col items-center justify-center">
+            <div class="flex flex-col items-center justify-center py-5 gap-1">
+                <p class="nunito-body-alt text-3xl">For teens, by teens &lt;3</p>
+                <p class="nunito-body text-xl"><a class="hover:underline cursor-pointer" href="https://hackclub.com/" target="_blank" rel="noopener noreferrer">Hack Club</a> • <a class="hover:underline cursor-pointer" href="https://github.com/skueee/orfest" target="_blank" rel="noopener noreferrer">Source</a></p>
+            </div>
+        </footer>
     </div>
 </div>
