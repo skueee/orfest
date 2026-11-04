@@ -20,7 +20,7 @@
 
 <div class="h-screen w-full overflow-y-scroll snap-y snap-mandatory">
     <div id="top" class="h-screen w-full snap-start flex items-center justify-center relative">
-        <div class="absolute h-screen w-full">
+        <div class="absolute h-screen w-full pointer-events-none">
             <div class="absolute" style="top: 10%; right: 10%;">
                 <Sticker src={stickersList[0]} movable rotate={-10} width={200} />
             </div>

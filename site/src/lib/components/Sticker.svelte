@@ -66,7 +66,7 @@ Inspired from https://design.hackclub.com/components/photos/ -->
 
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <span
-  class="sticker"
+  class="sticker pointer-events-auto"
   class:movable
   class:dragging
   style="--x:{x}px; --y:{y}px; --r:{rotate}deg; --sticker-width:{width}px"
