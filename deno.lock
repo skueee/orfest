@@ -36,6 +36,7 @@
     "jsr:@steno/steno@*": "0.14.0",
     "jsr:@steno/steno@0.14": "0.14.0",
     "jsr:@steno/tau@0.9.0": "0.9.0",
+    "jsr:@steno/theme-docs-minimal@0.14": "0.14.0",
     "jsr:@steno/theme-minimal@0.14": "0.14.0",
     "npm:@deno/svelte-adapter@~0.2.2": "0.2.2_@sveltejs+kit@3.1.1",
     "npm:@eslint/js@^10.0.1": "10.0.1_eslint@10.14.0",
@@ -213,6 +214,9 @@
     },
     "@steno/tau@0.9.0": {
       "integrity": "47ca7bc0cb6e45a05b55c5b8ad2d0d08a953cccda1ffb7f7f306e6ecd677f147"
+    },
+    "@steno/theme-docs-minimal@0.14.0": {
+      "integrity": "01fc3ddb664afccb94ed4b8c92d7b11056819bf28fa81470cba3cfa793457722"
     },
     "@steno/theme-minimal@0.14.0": {
       "integrity": "49994ca26ef70d125b158c5be040e485c32230aaec484ce93a3be629a3263bb7"
