@@ -1,6 +1,8 @@
 <script>
 	import Line from '#lib/components/Line.svelte';
 	import FaqQuestion from '#lib/components/FaqQuestion.svelte';
+	import Sticker from '#lib/components/Sticker.svelte'
+	import { getRandomImages } from '#lib/RandomStickers.ts'
 	import { ArrowDownIcon, ArrowUpIcon } from 'phosphor-svelte'
 	import Logo from '#lib/assets/images/logo.png'
 	import smartDinosaurDocs from '#lib/assets/images/smartDinosaurDocs.png'
@@ -12,10 +14,33 @@
 	const goToContent = () => {
 	    document.getElementById('next')?.scrollIntoView({ behavior: 'smooth' })
 	}
+
+	let stickersList = getRandomImages()
 </script>
 
 <div class="h-screen w-full overflow-y-scroll snap-y snap-mandatory">
     <div id="top" class="h-screen w-full snap-start flex items-center justify-center relative">
+        <div class="absolute h-screen w-full">
+            <div class="absolute" style="top: 10%; right: 10%;">
+                <Sticker src={stickersList[0]} movable rotate={-10} width={200} />
+            </div>
+            <div class="absolute" style="top: 40%; right: 10%;">
+                <Sticker src={stickersList[1]} movable rotate={0} width={200}/>
+            </div>
+            <div class="absolute" style="bottom: 10%; right: 10%;">
+                <Sticker src={stickersList[2]} movable rotate={10} width={200} />
+            </div>
+
+            <div class="absolute" style="top: 10%; left: 10%;">
+                <Sticker src={stickersList[3]} movable rotate={-10} width={200} />
+            </div>
+            <div class="absolute" style="top: 40%; left: 10%;">
+                <Sticker src={stickersList[4]} movable rotate={0} width={200}/>
+            </div>
+            <div class="absolute" style="bottom: 10%; left: 10%;">
+                <Sticker src={stickersList[5]} movable rotate={10} width={200} />
+            </div>
+        </div>
         <header class="absolute top-0">
             <div class="py-5 flex flex-row gap-5 items-center justify-center">
                 <a href="/" class="nunito-bold text-4xl py-1 px-3 rounded-xl transition-colors duration-300 hover:bg-black hover:text-white">Home</a>
