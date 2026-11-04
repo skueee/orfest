@@ -8,6 +8,10 @@
 	const gotoTop = () => {
 	     document.getElementById('top')?.scrollIntoView({ behavior: 'smooth' });
     };
+
+	const goToContent = () => {
+	    document.getElementById('next')?.scrollIntoView({ behavior: 'smooth' })
+	}
 </script>
 
 <div class="h-screen w-full overflow-y-scroll snap-y snap-mandatory">
@@ -19,10 +23,10 @@
             </div>
             <a class="text-4xl nunito-title-alt btn-primary cursor-pointer" href="https://rsvp.soon.it/orfest" target="_blank" rel="noopener noreferrer">RSVP NOW!!!</a>
         </div>
-        <div class="absolute bottom-8"><ArrowDownIcon size={64}/></div>
+        <div class="absolute bottom-8"><ArrowDownIcon onclick={goToContent} size={64} class="transition-transform duration-300 ease-in-out hover:scale-150 cursor-pointer"/></div>
     </div>
 
-    <div class="snap-start min-h-screen w-full flex items-center justify-start flex-col pt-15 gap-7">
+    <div id="next" class="snap-start min-h-screen w-full flex items-center justify-start flex-col pt-15 gap-7">
         <div class="flex flex-col gap-5">
             <Line />
             <div class="flex flex-col items-center gap-4">
