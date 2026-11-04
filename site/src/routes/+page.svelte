@@ -16,6 +16,12 @@
 
 <div class="h-screen w-full overflow-y-scroll snap-y snap-mandatory">
     <div id="top" class="h-screen w-full snap-start flex items-center justify-center relative">
+        <header class="absolute top-0">
+            <div class="py-5 flex flex-row gap-5 items-center justify-center">
+                <a href="/" class="nunito-bold text-4xl py-1 px-3 rounded-xl transition-colors duration-300 hover:bg-black hover:text-white">Home</a>
+                <a href="/docs" class="nunito-bold text-4xl py-1 px-3 rounded-xl transition-colors duration-300 hover:bg-black hover:text-white">Docs</a>
+            </div>
+        </header>
         <div class="flex flex-col items-center gap-5">
             <div class="flex flex-col items-center gap-3">
                 <img src={Logo} alt="Orfest logo" width="600" class="-mb-10"/>
@@ -67,7 +73,6 @@
                             <div class="flex border-2 w-full py-3 items-center justify-center nunito-body text-2xl shadow-[0px_5px_0px_0px_rgba(0,0,0,1)]">A bot for Slack</div>
                             <div class="flex border-2 w-full py-3 items-center justify-center nunito-body text-2xl shadow-[0px_5px_0px_0px_rgba(0,0,0,1)]">A tool for other Hack Clubers</div>
                         </div>
-                        <p class="nunito-note text-2xl">Checkout our guides !</p>
                     </div>
                 </div>
             </div>
