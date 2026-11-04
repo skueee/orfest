@@ -102,7 +102,7 @@ Inspired from https://design.hackclub.com/components/photos/ -->
     display: block;
     width: var(--sticker-width, 120px);
     height: auto;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
     transition:
       transform 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94),
       filter 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
