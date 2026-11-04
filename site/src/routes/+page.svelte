@@ -1,13 +1,17 @@
 <script>
 	import Line from '#lib/components/Line.svelte';
 	import FaqQuestion from '#lib/components/FaqQuestion.svelte';
-	import { ArrowDownIcon } from 'phosphor-svelte'
+	import { ArrowDownIcon, ArrowUpIcon } from 'phosphor-svelte'
 	import Logo from '#lib/assets/images/logo.png'
 	import smartDinosaurDocs from '#lib/assets/images/smartDinosaurDocs.png'
+
+	const gotoTop = () => {
+	     document.getElementById('top')?.scrollIntoView({ behavior: 'smooth' });
+    };
 </script>
 
 <div class="h-screen w-full overflow-y-scroll snap-y snap-mandatory">
-    <div class="h-screen w-full snap-start flex items-center justify-center relative">
+    <div id="top" class="h-screen w-full snap-start flex items-center justify-center relative">
         <div class="flex flex-col items-center gap-5">
             <div class="flex flex-col items-center gap-3">
                 <img src={Logo} alt="Orfest logo" width="600" class="-mb-10"/>
@@ -92,6 +96,9 @@
                 </div>
             </div>
             <Line />
+        </div>
+        <div class="flex flex-row items-center justify-center ">
+            <button onclick={gotoTop} class="hover:underline gap-2 items-center justify-center flex flex-row cursor-pointer nunito-title-alt text-3xl"><ArrowUpIcon weight={"bold"} size={32}/>Back to top<ArrowUpIcon weight={"bold"} size={32}/></button>
         </div>
     </div>
 </div>
