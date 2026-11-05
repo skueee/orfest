@@ -51,7 +51,7 @@
         <header class="absolute top-0">
             <div class="py-5 flex flex-row gap-5 items-center justify-center">
                 <a href="/" class="nunito-bold text-4xl py-1 px-3 rounded-xl transition-colors duration-300 hover:bg-black hover:text-white">Home</a>
-                <a href="/docs" class="nunito-bold text-4xl py-1 px-3 rounded-xl transition-colors duration-300 hover:bg-black hover:text-white">Docs</a>
+                <a href="/docs"  rel="external" class="nunito-bold text-4xl py-1 px-3 rounded-xl transition-colors duration-300 hover:bg-black hover:text-white">Docs</a>
             </div>
         </header>
         <div class="flex flex-col items-center gap-5">
