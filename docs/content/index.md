@@ -3,6 +3,6 @@ title: Home
 layout: layout
 ---
 
-# Welcome to Orfest Docs
+# Welcome to the Orfest docs!
 
-Your Steno site is ready. Edit this page at `content/index.md`.
+**Perhaps you would like to learn about this YSWS ?** [Start here!](/docs/start/start-here)

@@ -13,3 +13,21 @@ shortUrls: true
 theme: jsr:@steno/theme-docs-minimal@^0.14.0
 themeConfig:
   author: "skueee"
+navigation:
+  - title: "Start"
+    children:
+      - title: "Start here"
+        url: "/start/start-here"
+  - title: "Shipping and Rating"
+    children:
+      - title: "Shipping"
+        url: "/shipping/shipping"
+      - title: "Rating"
+        url: "/rating/rating/"
+        children:
+          - title: "Constraints"
+            url: "/rating/constraints"
+          - title: "Titles"
+            url: "/rating/titles"
+  - title: "FAQ"
+    url: "/faq"
