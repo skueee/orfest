@@ -83,6 +83,8 @@ domain/
 
 ### Submitting a PR
 
+A PR should always be editable by maintainers and follow the AI guidelines.
+
 Before submitting a PR, please test these things:
 
 **1. Test in dev**
