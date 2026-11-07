@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  check-commit:
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check for AI
+        uses: Jondolf/ai-commit-check@v1
+        with:
+          fail-on-detection: true
+
+  test:
+    uses: ./.github/workflows/test.yml
