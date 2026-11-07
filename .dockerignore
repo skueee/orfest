@@ -1,0 +1,19 @@
+.git
+node_modules/
+dist/
+.svelte-kit
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Steno docs build cache
+docs/content/.steno/build-cache.json
+
+# Logs
+*.log
+
+# Not needed inside the image
+Dockerfile
+.dockerignore
