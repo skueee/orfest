@@ -10,6 +10,7 @@
 <svelte:head>
 	<link rel="icon" href={favicon} />
 	<title>Orfest</title>
+	<meta name="description" content="Orfest is a Hack Club YSWS where you do something Hack Club related and get Hack Club merch!"/>
 </svelte:head>
 
 {@render children()}
