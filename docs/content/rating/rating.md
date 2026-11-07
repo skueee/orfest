@@ -8,7 +8,7 @@ The first way of getting points (and the most common one amongst YSWS) is with
 your coding hours.
 
 You will get points depending on the number of hours you coded, registered with
-[Hackatime](https://hackcatime.hackclub.com). If your coding type is
+[Hackatime](https://hackatime.hackclub.com). If your coding type is
 suspiciously high, it can be deflated.
 
 ## Titles and constraints
@@ -32,7 +32,7 @@ what's funnier is that it will give you points !
 At shipping, you will need to select every constraint you followed (and prove
 it).
 
-The full explaination is available [here](/docs/rating/constraints).
+The full explaination is available [here](/rating/constraints).
 
 ### Titles
 
@@ -41,4 +41,4 @@ something very nicely!
 
 For example, it could be loved by Hack Clubers, be very creative...
 
-The full explaination is available [here](/docs/rating/titles).
+The full explaination is available [here](/rating/titles).

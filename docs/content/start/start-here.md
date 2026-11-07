@@ -44,7 +44,7 @@ what's funnier is that it will give you points !
 At shipping, you will need to select every constraint you followed (and prove
 it).
 
-The full explaination is available [here](/docs/rating/constraints).
+The full explaination is available [here](/rating/constraints).
 
 #### Titles
 
@@ -54,4 +54,4 @@ something very nicely!
 For example, it could be loved by Hack Clubers, be very creative... And of
 course, you get points for it (yeah, i know, revolutianory type shi)
 
-The full explaination is available [here](/docs/rating/titles).
+The full explaination is available [here](/rating/titles).
