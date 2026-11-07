@@ -1,0 +1,46 @@
+/** This changes the CSS for the docs theme
+    There is config for the theme, but this approach is wayyy more flexible **/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&display=swap');
+
+:root {
+  color-scheme: light;
+  --paper: #ffffff;
+  --surface: #ffffff;
+  --ink: #000000;
+  --muted: #000000;
+  --line: #000000;
+  --strong-line: #000000;
+  --accent: #000000 !important;
+  --accent-hover: #000000 !important;
+  --accent-fg: #ffffff !important;
+  --accent-dark: #000000 !important;
+  --accent-dark-hover: #000000 !important;
+  --accent-dark-fg: #ffffff !important;
+  --font-sans: "Nunito Sans", sans-serif;
+  --font-serif: "Nunito Sans", sans-serif;
+}
+
+/* nunito-body */
+body {
+  font-size: 1.15rem;
+  font-weight: 600;
+  font-variation-settings: "wdth" 90, "YTLC" 440;
+}
+
+/* nunito-title */
+.content-wrapper :is(h1, h2, h3, h4, h5, h6) {
+  font-weight: 940;
+  font-variation-settings: "wdth" 82, "YTLC" 500;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #ffffff;
+    --surface: #ffffff;
+    --ink: #000000;
+    --muted: #000000;
+    --line: #000000;
+    --strong-line: #000000;
+  }
+}
