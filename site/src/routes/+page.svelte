@@ -32,48 +32,49 @@
 	}
 </script>
 
-<div class="h-screen w-full overflow-y-scroll snap-y snap-mandatory">
-    <div id="top" class="h-screen w-full snap-start flex items-center justify-center relative">
-        {#if mounted}
-        <div class="absolute h-screen w-full pointer-events-none">
-            <div class="absolute" style="top: {getRandomInt(5, 15)}%; right: {getRandomInt(5, 15)}%;">
-                <Sticker src={stickersList[0]} movable rotate={-10} width={200} />
-            </div>
-            <div class="absolute" style="top: {getRandomInt(35, 45)}%; right: {getRandomInt(5, 15)}%;">
-                <Sticker src={stickersList[1]} movable rotate={0} width={200}/>
-            </div>
-            <div class="absolute" style="bottom: {getRandomInt(5, 15)}%; right: {getRandomInt(5, 15)}%;">
-                <Sticker src={stickersList[2]} movable rotate={10} width={200} />
-            </div>
+<main>
+    <div class="h-screen w-full overflow-y-scroll snap-y snap-mandatory">
+        <div id="top" class="h-screen w-full snap-start flex items-center justify-center relative">
+            {#if mounted}
+                <div class="absolute h-screen w-full pointer-events-none">
+                    <div class="absolute" style="top: {getRandomInt(5, 15)}%; right: {getRandomInt(5, 15)}%;">
+                        <Sticker src={stickersList[0]} movable rotate={-10} width={200} />
+                    </div>
+                    <div class="absolute" style="top: {getRandomInt(35, 45)}%; right: {getRandomInt(5, 15)}%;">
+                        <Sticker src={stickersList[1]} movable rotate={0} width={200}/>
+                    </div>
+                    <div class="absolute" style="bottom: {getRandomInt(5, 15)}%; right: {getRandomInt(5, 15)}%;">
+                        <Sticker src={stickersList[2]} movable rotate={10} width={200} />
+                    </div>
 
-            <div class="absolute" style="top: {getRandomInt(5, 15)}%; left: {getRandomInt(5, 15)}%;">
-                <Sticker src={stickersList[3]} movable rotate={-10} width={200} />
-            </div>
-            <div class="absolute" style="top: {getRandomInt(35, 45)}%; left: {getRandomInt(5, 15)}%;">
-                <Sticker src={stickersList[4]} movable rotate={0} width={200}/>
-            </div>
-            <div class="absolute" style="bottom: {getRandomInt(5, 15)}%; left: {getRandomInt(5, 15)}%;">
-                <Sticker src={stickersList[5]} movable rotate={10} width={200} />
-            </div>
-        </div>
-        {/if}
-        <header class="absolute top-0">
+                    <div class="absolute" style="top: {getRandomInt(5, 15)}%; left: {getRandomInt(5, 15)}%;">
+                        <Sticker src={stickersList[3]} movable rotate={-10} width={200} />
+                    </div>
+                    <div class="absolute" style="top: {getRandomInt(35, 45)}%; left: {getRandomInt(5, 15)}%;">
+                        <Sticker src={stickersList[4]} movable rotate={0} width={200}/>
+                    </div>
+                    <div class="absolute" style="bottom: {getRandomInt(5, 15)}%; left: {getRandomInt(5, 15)}%;">
+                        <Sticker src={stickersList[5]} movable rotate={10} width={200} />
+                    </div>
+                </div>
+                {/if}
+            <header class="absolute top-0">
             <div class="py-5 flex flex-row gap-5 items-center justify-center">
                 <a href="/" class="nunito-bold text-4xl py-1 px-3 rounded-xl transition-colors duration-300 hover:bg-black hover:text-white">Home</a>
                 <a href="/docs"  rel="external" class="nunito-bold text-4xl py-1 px-3 rounded-xl transition-colors duration-300 hover:bg-black hover:text-white">Docs</a>
             </div>
         </header>
-        <div class="flex flex-col items-center gap-5">
+            <div class="flex flex-col items-center gap-5">
             <div class="flex flex-col items-center gap-3">
                 <img src={Logo} alt="Orfest logo" width="600" class="-mb-10"/>
                 <p class="nunito-body text-xl">Build something Hack Club related - Get Hack Club merch</p>
             </div>
             <a class="text-4xl nunito-title-alt btn-primary cursor-pointer" href="https://rsvp.soon.it/orfest" target="_blank" rel="noopener noreferrer">RSVP NOW!!!</a>
         </div>
-        <div class="absolute bottom-8"><ArrowDownIcon onclick={goToContent} size={64} class="transition-transform duration-300 ease-in-out hover:scale-150 cursor-pointer"/></div>
-    </div>
+            <div class="absolute bottom-8"><ArrowDownIcon onclick={goToContent} size={64} class="transition-transform duration-300 ease-in-out hover:scale-150 cursor-pointer"/></div>
+        </div>
 
-    <div id="next" class="snap-start min-h-screen w-full flex items-center justify-start flex-col pt-15 gap-7">
+        <div id="next" class="snap-start min-h-screen w-full flex items-center justify-start flex-col pt-15 gap-7">
         <div class="flex flex-col gap-5">
             <Line />
             <div class="flex flex-col items-center gap-4">
@@ -157,4 +158,5 @@
             </div>
         </footer>
     </div>
-</div>
+    </div>
+</main>
