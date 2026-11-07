@@ -5,10 +5,11 @@ const SITE_ROOT = "./dist/sveltekit";
 
 function rewriteDocsHtml(html: string): string {
   return html.replace(
-    /(\b(?:href|src|action|poster)=["'])\/(?!\/|docs\/)/g,
-    "$1/docs/",
+    /(\b(?:href|src|action|poster)=)(["']?)\/(?!\/|docs\/)/g,
+    "$1$2/docs/",
   );
 }
+
 
 export async function handler(req: Request): Promise<Response> {
   const { pathname } = new URL(req.url);
@@ -22,7 +23,7 @@ export async function handler(req: Request): Promise<Response> {
       quiet: true,
     });
 
-    // Rewrite things so that it can access css
+    // Rewrite urls so that it can access css, return to correct urls...
     if (
       res.status === 200 &&
       res.headers.get("content-type")?.includes("text/html")
