@@ -128,8 +128,7 @@
                         <div class="w-50 h-0.5 md:w-0.5 md:h-70 bg-current my-2"></div>
                         <div class="w-1/2 flex flex-col items-start text-center md:text-start justify-center gap-5">
                             <p class="nunito-bold text-3xl">Get special titles</p>
-                            <p class="nunito-body text-2xl">Add a constraint, or just make a<br/> project that peoples love, and get more points !
-                                <br/><br/>Check the titles here</p>
+                            <p class="nunito-body text-2xl">Add a constraint, or just make a<br/> project that peoples love, and get more points !</p>
                         </div>
                     </div>
                 </div>
