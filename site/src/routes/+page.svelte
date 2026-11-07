@@ -5,6 +5,7 @@
 	import { getRandomImages } from '#lib/RandomStickers.ts'
 	import { ArrowDownIcon, ArrowUpIcon } from 'phosphor-svelte'
 	import Logo from '#lib/assets/images/logo.png'
+	import flagOrpheusTop from '#lib/assets/images/flagOrpheusTop.png'
 	import smartDinosaurDocs from '#lib/assets/images/smartDinosaurDocs.png'
 	import { onMount } from 'svelte';
 
@@ -58,7 +59,12 @@
                     </div>
                 </div>
             {/if}
-            <header class="absolute top-0">
+            <header class="absolute top-0 inset-x-0">
+                <div class="absolute hidden md:block top-0 left-[5%] lg:left-[25%]">
+                    <a href="https://hackclub.com" target="_blank" rel="noopener noreferrer">
+                        <img width="200" src={flagOrpheusTop} alt="Hack Club flag" class="origin-top transition-transform duration-300 ease-out hover:scale-125"/>
+                    </a>
+                </div>
                 <div class="py-5 flex flex-row gap-5 items-center justify-center">
                     <a href="/" class="nunito-bold text-4xl py-1 px-3 rounded-xl transition-colors duration-300 hover:bg-black hover:text-white">Home</a>
                     <a href="/docs"  rel="external" class="nunito-bold text-4xl py-1 px-3 rounded-xl transition-colors duration-300 hover:bg-black hover:text-white">Docs</a>
