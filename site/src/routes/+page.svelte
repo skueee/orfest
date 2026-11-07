@@ -67,7 +67,7 @@
             <div class="flex flex-col items-center gap-5">
                 <div class="flex flex-col items-center gap-3">
                     <img src={Logo} alt="Orfest logo" width="600" class="-mb-10"/>
-                    <p class="nunito-body text-xl">Build something Hack Club related - Get Hack Club merch</p>
+                    <p class="nunito-body text-lg sm:text-xl">Build something Hack Club related - Get Hack Club merch</p>
                 </div>
                 <a class="text-4xl nunito-title-alt btn-primary cursor-pointer" href="https://rsvp.soon.it/orfest" target="_blank" rel="noopener noreferrer">RSVP NOW!!!</a>
             </div>
@@ -79,23 +79,23 @@
                 <Line />
                 <div class="flex flex-col items-center gap-4">
                     <div class="flex flex-col items-center gap-1">
-                        <h1 class="nunito-title-alt text-4xl">1. Sign up</h1>
-                        <p class="nunito-body-alt text-2xl opacity-80">Sign up with your Hack Club account !</p>
+                        <h1 class="nunito-title-alt text-2xl md:text-3xl lg:text-4xl">1. Sign up</h1>
+                        <p class="nunito-body-alt text-base md:text-2xl opacity-80">Sign up with your Hack Club account !</p>
                     </div>
                     <ArrowDownIcon size={46}/>
                     <div class="flex flex-col items-center">
-                        <h1 class="nunito-title-alt text-4xl">2. Make something Hack Club related</h1>
-                        <p class="nunito-body-alt text-2xl opacity-80">A game about Orpheus, a bot for the Slack... Be creative !</p>
+                        <h1 class="nunito-title-alt text-2xl md:text-3xl lg:text-4xl">2. Make something Hack Club related</h1>
+                        <p class="nunito-body-alt text-base md:text-2xl opacity-80">A game about Orpheus, a bot for the Slack... Be creative !</p>
                     </div>
                     <ArrowDownIcon size={46}/>
                     <div class="flex flex-col items-center">
-                        <h1 class="nunito-title-alt text-4xl">3. Ship and get reviewed</h1>
-                        <p class="nunito-body-alt text-2xl opacity-80">You give us your project, and we check it !</p>
+                        <h1 class="nunito-title-alt text-2xl md:text-3xl lg:text-4xl">3. Ship and get reviewed</h1>
+                        <p class="nunito-body-alt text-base md:text-2xl opacity-80">You give us your project, and we check it !</p>
                     </div>
                     <ArrowDownIcon size={46}/>
                     <div class="flex flex-col items-center">
-                        <h1 class="nunito-title-alt text-4xl">4. Get merch!</h1>
-                        <p class="nunito-body-alt text-2xl opacity-80">Cool stickers, t-shirts... Anything you every wished !</p>
+                        <h1 class="nunito-title-alt text-2xl md:text-3xl lg:text-4xl">4. Get merch!</h1>
+                        <p class="nunito-body-alt text-base md:text-2xl opacity-80">Cool stickers, t-shirts... Anything you every wished !</p>
                     </div>
                 </div>
                 <Line />
@@ -134,10 +134,10 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-10">
+            <div class="flex flex-col gap-10 w-full max-w-[958px] px-10">
                 <Line />
-                <div class="flex flex-col justify-start gap-7">
-                    <h1 class="nunito-title text-6xl">FAQ</h1>
+                <div class="flex flex-col justify-center md:justify-start gap-7">
+                    <h1 class="nunito-title text-6xl text-center lg:text-start">FAQ</h1>
                     <div class="flex flex-col w-full gap-3">
                         <FaqQuestion question="Is this legit?" answer='<p>Of course it is! It&apos;s ran by <a class="underline" href="https://hackclub.com/" target="_blank" rel="noopener noreferrer">Hack Club</a>, a nonprofit that is helping teens acquire technical competencies.</p>'/>
                         <FaqQuestion question="Who can join?" answer="<p>Everyone that is between 13 and 18 years old</p>"/>
