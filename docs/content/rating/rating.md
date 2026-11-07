@@ -8,8 +8,8 @@ The first way of getting points (and the most common one amongst YSWS) is with
 your coding hours.
 
 You will get points depending on the number of hours you coded, registered with
-[Hackatime](https://hackatime.hackclub.com). If your coding type is
-suspiciously high, it can be deflated.
+[Hackatime](https://hackatime.hackclub.com). If your coding type is suspiciously
+high, it can be deflated.
 
 ## Titles and constraints
 

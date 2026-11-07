@@ -10,7 +10,6 @@ function rewriteDocsHtml(html: string): string {
   );
 }
 
-
 export async function handler(req: Request): Promise<Response> {
   const { pathname } = new URL(req.url);
 

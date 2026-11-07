@@ -10,8 +10,8 @@ and you get merch for it !**
 
 **1. Build your project**
 
-Build a project related to anything that rapproches to Hack Club ! Also, you
-can choose a constraint (see below) to get more points.
+Build a project related to anything that rapproches to Hack Club ! Also, you can
+choose a constraint (see below) to get more points.
 
 **2. Ship it**
 
