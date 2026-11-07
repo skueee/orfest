@@ -14,6 +14,8 @@ theme: jsr:@steno/theme-docs-minimal@^0.14.0
 themeConfig:
   author: "skueee"
 navigation:
+  - title: "← Back to site"
+    url: "/return" # /docs/return is automatically redirected to the homepage
   - title: "Start"
     children:
       - title: "Start here"

@@ -13,6 +13,11 @@ function rewriteDocsHtml(html: string): string {
 export async function handler(req: Request): Promise<Response> {
   const { pathname } = new URL(req.url);
 
+  // "Back to site" in the docs
+  if (pathname === "/docs/return" || pathname === "/docs/return/") {
+    return Response.redirect(new URL("/", req.url), 302);
+  }
+
   // Steno site under /docs
   if (pathname === "/docs" || pathname.startsWith("/docs/")) {
     const res = await serveDir(req, {
