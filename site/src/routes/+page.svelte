@@ -6,6 +6,7 @@
 	import { ArrowDownIcon, ArrowUpIcon } from 'phosphor-svelte'
 	import Logo from '#lib/assets/images/logo.png'
 	import smartDinosaurDocs from '#lib/assets/images/smartDinosaurDocs.png'
+	import { onMount } from 'svelte';
 
 	const gotoTop = () => {
 	     document.getElementById('top')?.scrollIntoView({ behavior: 'smooth' });
@@ -15,7 +16,13 @@
 	    document.getElementById('next')?.scrollIntoView({ behavior: 'smooth' })
 	}
 
-	let stickersList = getRandomImages()
+	let mounted = $state(false);
+	let stickersList = $state([]);
+	onMount(() => {
+      stickersList = getRandomImages();
+      mounted = true;
+	});
+
 
 	// Lil helper so i can do it easily
 	function getRandomInt(min, max) {
@@ -27,6 +34,7 @@
 
 <div class="h-screen w-full overflow-y-scroll snap-y snap-mandatory">
     <div id="top" class="h-screen w-full snap-start flex items-center justify-center relative">
+        {#if mounted}
         <div class="absolute h-screen w-full pointer-events-none">
             <div class="absolute" style="top: {getRandomInt(5, 15)}%; right: {getRandomInt(5, 15)}%;">
                 <Sticker src={stickersList[0]} movable rotate={-10} width={200} />
@@ -48,6 +56,7 @@
                 <Sticker src={stickersList[5]} movable rotate={10} width={200} />
             </div>
         </div>
+        {/if}
         <header class="absolute top-0">
             <div class="py-5 flex flex-row gap-5 items-center justify-center">
                 <a href="/" class="nunito-bold text-4xl py-1 px-3 rounded-xl transition-colors duration-300 hover:bg-black hover:text-white">Home</a>
