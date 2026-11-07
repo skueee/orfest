@@ -59,19 +59,19 @@
                 </div>
             {/if}
             <header class="absolute top-0">
-            <div class="py-5 flex flex-row gap-5 items-center justify-center">
-                <a href="/" class="nunito-bold text-4xl py-1 px-3 rounded-xl transition-colors duration-300 hover:bg-black hover:text-white">Home</a>
-                <a href="/docs"  rel="external" class="nunito-bold text-4xl py-1 px-3 rounded-xl transition-colors duration-300 hover:bg-black hover:text-white">Docs</a>
-            </div>
-            </header>
-                <div class="flex flex-col items-center gap-5">
-                    <div class="flex flex-col items-center gap-3">
-                        <img src={Logo} alt="Orfest logo" width="600" class="-mb-10"/>
-                        <p class="nunito-body text-xl">Build something Hack Club related - Get Hack Club merch</p>
-                    </div>
-                    <a class="text-4xl nunito-title-alt btn-primary cursor-pointer" href="https://rsvp.soon.it/orfest" target="_blank" rel="noopener noreferrer">RSVP NOW!!!</a>
+                <div class="py-5 flex flex-row gap-5 items-center justify-center">
+                    <a href="/" class="nunito-bold text-4xl py-1 px-3 rounded-xl transition-colors duration-300 hover:bg-black hover:text-white">Home</a>
+                    <a href="/docs"  rel="external" class="nunito-bold text-4xl py-1 px-3 rounded-xl transition-colors duration-300 hover:bg-black hover:text-white">Docs</a>
                 </div>
-                <div class="absolute bottom-8"><ArrowDownIcon onclick={goToContent} size={64} class="transition-transform duration-300 ease-in-out hover:scale-150 cursor-pointer"/></div>
+            </header>
+            <div class="flex flex-col items-center gap-5">
+                <div class="flex flex-col items-center gap-3">
+                    <img src={Logo} alt="Orfest logo" width="600" class="-mb-10"/>
+                    <p class="nunito-body text-xl">Build something Hack Club related - Get Hack Club merch</p>
+                </div>
+                <a class="text-4xl nunito-title-alt btn-primary cursor-pointer" href="https://rsvp.soon.it/orfest" target="_blank" rel="noopener noreferrer">RSVP NOW!!!</a>
+            </div>
+            <div class="absolute bottom-8"><ArrowDownIcon onclick={goToContent} size={64} class="transition-transform duration-300 ease-in-out hover:scale-150 cursor-pointer"/></div>
             </div>
 
         <div id="next" class="snap-start min-h-screen w-full flex items-center justify-start flex-col pt-15 gap-7">
